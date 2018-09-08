@@ -1,0 +1,125 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+*:focus {
+	outline: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.main {
+	padding: 0;
+	margin: 0;
+	height: auto;
+	width: auto;
+
+	input {
+		background-color: #141;
+		color: #fff;
+		border-radius: 50px;
+		font-size: 1.6rem;
+		text-align: center;
+		padding: 10px;
+		width: 150px;
+	}
+
+	input+button {
+		margin-left: 5px;
+		padding: 5px 10px;
+		font-size: 1.4rem;
+		background-color: #266;
+		color: #fafafa;
+	}
+
+	table {
+		height: auto;	
+		margin: 0 auto;
+	}
+
+	.underHead {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+		margin-top: 20px;
+		 font-size: 1.8rem;
+
+		 .titleInfo {
+		 	background-color: #141;
+		 	color: #fff;
+		 	border-radius: 50px;
+		 	padding: 10px 20px;
+		 }
+
+		 ul {
+		 	width: auto;
+		 	height: auto;
+		 	text-align: left;
+		    position: fixed;
+		    margin-left:-310px;
+    		margin-top:-230px;   
+		    top: 50%;
+		    left: 50%;
+		 	list-style: none;
+		 	background-color: #444;
+		 	padding: 0;
+
+		 	li {
+				margin: 0;
+				padding: 0;
+
+				span {
+					display: block;
+					color: #fff;
+					padding: 3px 20px;
+
+					&:hover {
+						background-color: #422;
+					}
+				}
+		 	}
+		 }
+	}
+
+	h1 {
+		margin-bottom: 40px;
+		text-align: center;
+		font-size: 3rem;
+	}
+
+	.btnCont {
+		text-align: center;
+		margin-top: 30px;
+
+		button {
+			font-size: 1.5rem;
+			background-color: #141;
+			border: none;
+			padding: 10px 20px;
+			color: #fff;
+			margin-left: 10px;
+		}
+	}
+}
+
+table tr{
+	font-size: 2rem;
+	text-align: center;
+	border: 1px solid black;
+
+	.uncurrent {
+		background-color: #333;
+		color: #fff;
+	}
+	.current {
+		background-color: #fafafa;
+		color: #000;
+	}
+	.runningDay {
+		background-color: red;
+		color: #fff;
+	}
+}

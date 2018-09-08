@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PowerMoneyBank</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+	<div class="changingBlock">
+		<div class="changeProp">
+			<%
+			for(let i=0; i < properties.length; i++) {%>
+			<span><%= properties[i].name %></span>
+			<% } %>
+		</div>
+	</div>
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-auto">
+					<ul>
+						<li><a href=<%= "/" + name %>>Title page</a></li>
+						<li><a href=<%= "/history/" + name%>>Pay history</a></li>
+						<li><a href=<%= "/pay/" + name %>>Pay money</a></li>
+						<li><a href=<%= "/payFinnaly/" + name %>>Pay money finnaly</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="mainContent" data-name=<%=  name%>>
+			<form action="POST" id="mainForm">
+				<ul class="propertiesList">
+					<li info="thing">
+						<p>
+							<label for=""><span class='propertyValue'>Power</span></label>
+							<input type="number" name='value'>													
+							<span class='countSum'>&nbsp;*&nbsp;
+								<span class="currentyTarrif"><%= price %></span>&nbsp;=&nbsp;
+								<span class="number"></span>
+							</span>
+						</p>
+				
+					</li>
+				</ul>
+			</form>
+
+		<ul class='months'>
+			
+			<li><span class="checkedMonth">January</span></li>
+			<li><span class="checkedMonth">February</span></li>
+			<li><span class="checkedMonth">Marth</span></li>
+			<li><span class="checkedMonth">April</span></li>
+			<li><span class="checkedMonth">May</span></li>
+			<li><span class="checkedMonth">June</span></li>
+			<li><span class="checkedMonth">Jule</span></li>
+			<li><span class="checkedMonth">August</span></li>
+			<li><span class="checkedMonth">September</span></li>
+			<li><span class="checkedMonth">October</span></li>
+			<li><span class="checkedMonth">November</span></li>
+			<li><span class="checkedMonth">December</span></li>
+			<li><input type="number"></li>
+		</ul>
+
+	</div>
+
+	<div class="submitAll">
+		<div class="container-fluid">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-auto">
+					<div>
+						<p>Currently price : <span>     </span></p>
+						<button class="submBtn">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- 	<script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js'></script>
+-->
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src='../script.js'></script>
+<script type="text/javascript" src='../objects.js'></script>
+</body>
+
+</html>

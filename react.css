@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	padding: 0;
+	margin: 0;
+	height: 50vh;
+	width: auto;
+	background-color: #fafafa;
+}
+
+table tr{
+	border: 1px solid black;
+}
